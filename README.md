@@ -36,8 +36,8 @@ EN Repository содержит тщательно собранные и опти
 
 | Пакет | Версия | Описание | Размер |
 |-------|--------|----------|--------|
-| **`calamares`** | `25.02.2.1-4` | Установщик EN-OS с красивыми темами 🎨 | `122 MB` |
-| **`ayugram-desktop`** | `4.2.1-3` | Telegram клиент с улучшенным UI ✨ | `52 MB` |
+| **`calamares`** | `25.02.2.1-4` | Установщик EN-OS с красивой темой (в разработке) 🎨 | `87 MB` |
+| **`ayugram-desktop`** | `4.2.1-3` | Telegram клиент с улучшенным функционалом: чтение удаленок, режим призрака и.т.д. ✨ | `49 MB` |
 
 [➡️ Посмотреть все пакеты...](PACKAGES.md)
 
@@ -114,8 +114,8 @@ EN Repository contains carefully curated and optimized packages for your system.
 
 | Package | Version | Description | Size |
 |---------|---------|-------------|------|
-| **`calamares`** | `25.02.2.1-4` | EN-OS installer with beautiful themes 🎨 | `122 MB` |
-| **`ayugram-desktop`** | `4.2.1-3` | Telegram client with enhanced UI ✨ | `52 MB` |
+| **`calamares`** | `25.02.2.1-4` | EN-OS installer with beautiful theme (in working..) 🎨 | `87 MB` |
+| **`ayugram-desktop`** | `4.2.1-3` | Telegram client with intresting functional: ghost mode, read deleted messaged and more.. ✨ | `48 MB` |
 
 [➡️ View all packages...](PACKAGES.md)
 
