@@ -1,141 +1,189 @@
-# EN-Repository 🚀
+<div align="center">
 
-Официальный репозиторий пакетов для EN-OS. Здесь содержатся специально собранные и оптимизированные пакеты для вашей системы.
+<img src="https://img.icons8.com/?size=100&id=123404&format=png&color=6E48AA" alt="EN Repository Logo" width="100">
 
-## 📦 Доступные пакеты
+# EN Repository 🌟
 
-### Calamares для EN-OS
-**Установка:**
-```bash
-sudo pacman -S enrepo/calamares
-```
+**Официальный репозиторий пакетов для EN-OS / Official package repository for EN-OS**
 
-**Описание:**  
-Кастомная сборка установщика Calamares, оптимизированная для EN-OS. Включает все необходимые конфигурации и модули для удобной установки системы.
+[![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org)
+[![Pacman](https://img.shields.io/badge/Pacman-1793D1?style=for-the-badge&logo=pacman&logoColor=white)](https://wiki.archlinux.org/title/pacman)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-6e48aa?style=for-the-badge&logo=github)](https://github.com/Endscape-Coding/EN-Repository)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](https://github.com/Endscape-Coding/EN-Repository)
+[![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](LICENSE)
 
-**Версия:** 25.02.2.1-4  
-**Размер:** ~122 MB  
-**Зависимости:** Автоматически разрешаются pacman
+</div>
 
----
-
-### Ayugram Desktop
-**Установка:**
-```bash
-sudo pacman -S enrepo/ayugram-desktop
-```
-
-**Описание:**  
-Фирменный desktop-клиент Ayugram с дополнительными возможностями и улучшенной интеграцией с EN-OS.
-
-**Версия:** Последняя стабильная  
-**Размер:** ~52 MB  
-**Особенности:** Нативные уведомления, оптимизация под Arch Linux
+<p align="center">
+  <a href="#-русский">Русский</a> • <a href="#-english">English</a>
+</p>
 
 ---
 
-## ⚡ Быстрый старт
+## 🇷🇺 Русский
 
-### 1. Добавление репозитория
-Добавьте в `/etc/pacman.conf`:
-```ini
-[enrepo]
-SigLevel = Optional TrustAll
-Server = https://github.com/Endscape-Coding/EN-Repository/raw/main/repo/
-```
+<div align="center">
 
-### 2. Обновление баз данных
+[📦 Пакеты](#-пакеты) • [⚡ Быстрый старт](#-быстрый-старт) • [🔧 Использование](#-использование) • [🤝 Сообщество](#-сообщество) • [❤️ Вклад в проект](#️-вклад-в-проект)
+
+</div>
+
+### 📦 Пакеты
+
+EN Repository содержит тщательно собранные и оптимизированные пакеты для вашей системы. Полный список с подробным описанием доступен в нашем **[📋 Каталоге пакетов](PACKAGES.md)**.
+
+**Некоторые из доступных пакетов:**
+
+| Пакет | Версия | Описание | Размер |
+|-------|--------|----------|--------|
+| **`calamares`** | `25.02.2.1-4` | Установщик EN-OS с красивыми темами 🎨 | `122 MB` |
+| **`ayugram-desktop`** | `4.2.1-3` | Telegram клиент с улучшенным UI ✨ | `52 MB` |
+
+[➡️ Посмотреть все пакеты...](PACKAGES.md)
+
+---
+
+### ⚡ Быстрый старт
+
 ```bash
+# 1. Добавляем репозиторий
+echo -e '\n[enrepo]\nSigLevel = Optional TrustAll\nServer = https://github.com/Endscape-Coding/EN-Repository/raw/main/repo/' | sudo tee -a /etc/pacman.conf
+
+# 2. Обновляем базы
 sudo pacman -Syy
+
+# 3. Устанавливаем пакеты
+sudo pacman -S enrepo/calamares enrepo/ayugram-desktop
 ```
 
-### 3. Установка пакетов
-```bash
-sudo pacman -S enrepo/calamares
-sudo pacman -S enrepo/ayugram-desktop
-```
+---
 
-## 🔧 Дополнительные команды
+### 🔧 Использование
 
-### Поиск пакетов в репозитории
+#### Поиск пакетов
 ```bash
 pacman -Sl enrepo
 ```
 
-### Информация о пакете
+#### Информация о пакете
 ```bash
 pacman -Si enrepo/calamares
 ```
 
-### Установка конкретной версии
-```bash
-sudo pacman -S enrepo/calamares-25.02.2.1-4
-```
-
-## 🛠️ Для разработчиков
-
-### Структура репозитория
-```
-EN-Repository/
-└── repo/
-    ├── enrepo.db.tar.gz      # База данных пакетов
-    ├── enrepo.files.tar.gz   # Файловая база
-    ├── calamares-25.02.2.1-4-x86_64.pkg.tar.zst
-    └── ayugram-desktop-*.pkg.tar.zst
-```
-
-### Обновление репозитория
-```bash
-cd ~/EN-Repository/repo
-repo-add enrepo.db.tar.gz *.pkg.tar.zst
-git add .
-git commit -m "Update: добавлены новые пакеты"
-git push origin main
-```
-
-## ❓ Частые вопросы
-
-### Ошибка 404 при обновлении
-Убедитесь, что ссылка в pacman.conf заканчивается на `/`:
-```ini
-Server = https://github.com/.../raw/main/repo/
-```
-
-### Пакет не находится
-Обновите базы данных:
-```bash
-sudo pacman -Syy
-```
-
-### Конфликт версий
-Для установки из конкретного репозитория:
+#### Установка из конкретного репозитория
 ```bash
 sudo pacman -S enrepo::package-name
 ```
 
-## 📊 Статус репозитория
+---
 
-| Пакет | Версия | Статус |
-|-------|--------|---------|
-| Calamares | 25.02.2.1-4 | ✅ Стабильный |
-| Ayugram Desktop | latest | ✅ Стабильный |
+### 🤝 Сообщество
 
-## 🤝 Участие в разработке
+Присоединяйтесь к нашему сообществу для обсуждения, помощи и новостей!
 
-Предложения по улучшению пакетов и новые PR приветствуются! 
-
-1. Форкните репозиторий
-2. Создайте ветку для ваших изменений
-3. Откройте Pull Request
-
-## ⚠️ Важная информация
-
-- Репозиторий оптимизирован для EN-OS и Arch Linux-based систем
-- Все пакеты проходят тестирование перед добавлением
-- Рекомендуется регулярно обновлять пакеты: `sudo pacman -Syu`
+- **💬 Telegram-канал**: [@Linux_EN_OS](https://t.me/Linux_EN_OS)
+- **👥 Telegram-чат**: [@enos_community](https://t.me/enos_community)
+- **🐛 Баг-репорты**: [GitHub Issues](https://github.com/Endscape-Coding/EN-Repository/issues)
 
 ---
 
-**Поддержите проект:** ⭐ Поставьте звезду на GitHub!
+### ❤️ Вклад в проект
 
-*Последнее обновление: $(date +%Y-%m-%d)*
+Мы приветствуем любую помощь в развитии репозитория!
+
+- **Тестирование**: Устанавливайте пакеты и сообщайте о проблемах
+- **Разработка**: Предлагайте новые пакеты через Pull Requests
+- **Документация**: Помогайте улучшать документацию
+- **Распространение**: Расскажите о репозитории друзьям
+
+---
+
+## 🇬🇧 English
+
+<div align="center">
+
+[📦 Packages](#-packages-1) • [⚡ Quick Start](#-quick-start) • [🔧 Usage](#-usage) • [🤝 Community](#-community-1) • [❤️ Contributing](#️-contributing)
+
+</div>
+
+### 📦 Packages
+
+EN Repository contains carefully curated and optimized packages for your system. The complete list with detailed descriptions is available in our **[📋 Package Catalog](PACKAGES.md)**.
+
+**Some of the available packages:**
+
+| Package | Version | Description | Size |
+|---------|---------|-------------|------|
+| **`calamares`** | `25.02.2.1-4` | EN-OS installer with beautiful themes 🎨 | `122 MB` |
+| **`ayugram-desktop`** | `4.2.1-3` | Telegram client with enhanced UI ✨ | `52 MB` |
+
+[➡️ View all packages...](PACKAGES.md)
+
+---
+
+### ⚡ Quick Start
+
+```bash
+# 1. Add repository
+echo -e '\n[enrepo]\nSigLevel = Optional TrustAll\nServer = https://github.com/Endscape-Coding/EN-Repository/raw/main/repo/' | sudo tee -a /etc/pacman.conf
+
+# 2. Update database
+sudo pacman -Syy
+
+# 3. Install packages
+sudo pacman -S enrepo/calamares enrepo/ayugram-desktop
+```
+
+---
+
+### 🔧 Usage
+
+#### Search packages
+```bash
+pacman -Sl enrepo
+```
+
+#### Package information
+```bash
+pacman -Si enrepo/calamares
+```
+
+#### Install from specific repository
+```bash
+sudo pacman -S enrepo::package-name
+```
+
+---
+
+### 🤝 Community
+
+Join our community for discussions, support, and news!
+
+- **💬 Telegram Channel**: [@Linux_EN_OS](https://t.me/Linux_EN_OS)
+- **👥 Telegram Chat**: [@enos_community](https://t.me/enos_community)
+- **🐛 Bug Reports**: [GitHub Issues](https://github.com/Endscape-Coding/EN-Repository/issues)
+
+---
+
+### ❤️ Contributing
+
+We welcome any contributions to the repository development!
+
+- **Testing**: Install packages and report issues
+- **Development**: Suggest new packages via Pull Requests
+- **Documentation**: Help improve documentation
+- **Spreading the word**: Tell your friends about the repository
+
+---
+
+<div align="center">
+
+**⭐ Не забудьте поставить звезду на GitHub! / ⭐ Don't forget to star us on GitHub!**
+
+[![GitHub stars](https://img.shields.io/github/stars/Endscape-Coding/EN-Repository?style=social)](https://github.com/Endscape-Coding/EN-Repository)
+
+*Последнее обновление: $(date +%Y-%m-%d) / Last updated: $(date +%Y-%m-%d)*
+
+</div>
+
+---
