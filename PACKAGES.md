@@ -33,4 +33,4 @@
 **Размер** ~19 MB
 **Описание:** Магазин игр от valve, поддерживает proton, для видеокарт amd
 **Зависимости:** lib32-vulkan-radeon
-**Команда установки:** `sudo pacman -S steam-nvidia`
+**Команда установки:** `sudo pacman -S steam-amd`
