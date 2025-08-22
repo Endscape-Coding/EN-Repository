@@ -19,7 +19,7 @@
 **Зависимости:** qt5-base, openssl  
 **Команда установки:** `sudo pacman -S enrepo/ayugram-desktop`
 
-# 🎮 Игры / Games
+## 🎮 Игры / Games
 
 ### steam-nvidia
 **Версия** 1.0.0.82-2
