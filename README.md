@@ -38,6 +38,8 @@ EN Repository содержит тщательно собранные и опти
 |-------|--------|----------|--------|
 | **`calamares`** | `25.02.2.1-4` | Установщик EN-OS с красивой темой (в разработке) 🎨 | `87 MB` |
 | **`ayugram-desktop`** | `4.2.1-3` | Telegram клиент с улучшенным функционалом: чтение удаленок, режим призрака и.т.д. ✨ | `49 MB` |
+| **`steam-nvidia`** | `1.0.0.82-2` | Steam клиент с proton, для компьютеров с видеокартой nvidia ⚡ | `19 MB` |
+| **`steam-amd`** | `1.0.0.82-2` | Steam клиент с proton, для компьютеров с видеокартой amd ⚡ | `19 MB` |
 
 [➡️ Посмотреть все пакеты...](PACKAGES.md)
 
@@ -116,6 +118,8 @@ EN Repository contains carefully curated and optimized packages for your system.
 |---------|---------|-------------|------|
 | **`calamares`** | `25.02.2.1-4` | EN-OS installer with beautiful theme (in working..) 🎨 | `87 MB` |
 | **`ayugram-desktop`** | `4.2.1-3` | Telegram client with intresting functional: ghost mode, read deleted messaged and more.. ✨ | `48 MB` |
+| **`steam-nvidia`** | `1.0.0.82-2` | Steam client, have proton, for PC with nvidia videocard ⚡ | `19 MB` |
+| **`steam-amd`** | `1.0.0.82-2` | Steam client, have proton, for PC with AMD videocard ⚡ | `19 MB` |
 
 [➡️ View all packages...](PACKAGES.md)
 
