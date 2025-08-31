@@ -10,39 +10,39 @@
 **Команда установки:** `sudo pacman -S enrepo/calamares` или `sudo pacman -S calamares`
 
 ### EN-OS-plymouth-theme
-**Версия:** 1.0-1
-**Размер:** ~200 kb  
-**Описание:** Тема EN-OS для Plymouth
-**Зависимости:** plymouth 
-**Команда установки:** `sudo pacman -S enrepo/en-plymouth-theme` или `sudo pacman -S en-plymouth-theme` 
+**Версия:** 1.0-1  
+**Размер:** ~200 kb    
+**Описание:** Тема EN-OS для Plymouth  
+**Зависимости:** plymouth   
+**Команда установки:** `sudo pacman -S enrepo/en-plymouth-theme` или `sudo pacman -S en-plymouth-theme`   
 
-### EN-OS-simpleblue
-**Версия:** 1.0-1
-**Размер:** ~150 kb  
-**Описание:** Заставка при запуске KDE Plasma
-**Зависимости:** plasma-workspace, qt5-declarative kconfig kpackage 
-**Команда установки:** `sudo pacman -S enrepo/en-os-simpleblue` или `sudo pacman -S en-os-simpleblue` 
+### EN-OS-simpleblue  
+**Версия:** 1.0-1  
+**Размер:** ~150 kb    
+**Описание:** Заставка при запуске KDE Plasma  
+**Зависимости:** plasma-workspace, qt5-declarative kconfig kpackage   
+**Команда установки:** `sudo pacman -S enrepo/en-os-simpleblue` или `sudo pacman -S en-os-simpleblue`   
 
-### EN-System-Manager
-**Версия:** 1.0-1
-**Размер:** ~180 kb  
-**Описание:** Менеджер системы для EN-OS
-**Зависимости:** python3, python-pyqt5 
-**Команда установки:** `sudo pacman -S enrepo/en-system-manager` или `sudo pacman -S en-system-manager` 
+### EN-System-Manager  
+**Версия:** 1.0-1  
+**Размер:** ~180 kb    
+**Описание:** Менеджер системы для EN-OS  
+**Зависимости:** python3, python-pyqt5   
+**Команда установки:** `sudo pacman -S enrepo/en-system-manager` или `sudo pacman -S en-system-manager`   
 
-### EN-OS-Mojave
-**Версия:** 1.0-1
-**Размер:** ~1.6 MB 
-**Описание:** Тема SDDM
-**Зависимости:** sddm
-**Команда установки:** `sudo pacman -S enrepo/en-os-mojave` или `sudo pacman -S en-os-mojave` 
+### EN-OS-Mojave  
+**Версия:** 1.0-1  
+**Размер:** ~1.6 MB  
+**Описание:** Тема SDDM  
+**Зависимости:** sddm  
+**Команда установки:** `sudo pacman -S enrepo/en-os-mojave` или `sudo pacman -S en-os-mojave`   
 
-### Matrix-Rain-Plasma-Wallpaper
-**Версия:** 1.0-1
-**Размер:** ~7 kb  
-**Описание:** Живые обои matrix rain для kde plasma
-**Зависимости:** plasma-workspace, qt5-declarative kconfig kpackage 
-**Команда установки:** `sudo pacman -S enrepo/matrix-rain-plasma-wallpaper` или `sudo pacman -S matrix-rain-plasma-wallpaper` 
+### Matrix-Rain-Plasma-Wallpaper  
+**Версия:** 1.0-1  
+**Размер:** ~7 kb    
+**Описание:** Живые обои matrix rain для kde plasma  
+**Зависимости:** plasma-workspace, qt5-declarative kconfig kpackage   
+**Команда установки:** `sudo pacman -S enrepo/matrix-rain-plasma-wallpaper` или `sudo pacman -S matrix-rain-plasma-wallpaper`   
 
 
 
