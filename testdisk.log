@@ -1,0 +1,166 @@
+
+
+Fri Sep 26 07:41:56 2025
+Command line: TestDisk
+
+TestDisk 7.2, Data Recovery Utility, February 2024
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 6.16.8-arch3-1 (#1 SMP PREEMPT_DYNAMIC Mon, 22 Sep 2025 22:08:35 +0000) x86_64
+Compiler: GCC 14.2
+ext2fs lib: 1.47.3, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.5
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       976773168 sectors
+/dev/sda: user_max   976773168 sectors
+/dev/sda: native_max 976773168 sectors
+/dev/sda: dco        976773168 sectors
+/dev/sdb: LBA, HPA, LBA48, DCO support
+/dev/sdb: size       500118192 sectors
+/dev/sdb: user_max   500118192 sectors
+/dev/sdb: native_max 500118192 sectors
+/dev/sdb: dco        500118192 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63, sector size=512 - Hitachi HDS72105, FW:A3EA
+Disk /dev/sdb - 256 GB / 238 GiB - CHS 31130 255 63, sector size=512 - Apacer AS350 256, FW:5PE0
+
+Partition table type (auto): EFI GPT
+Disk /dev/sdb - 256 GB / 238 GiB - Apacer AS350 256
+Partition table type: EFI GPT
+
+Analyse Disk /dev/sdb - 256 GB / 238 GiB - CHS 31130 255 63
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=500118191 (expected 500118191)
+hdr_lba_start=34
+hdr_lba_end=500118158
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+21686148 6449 6e6f 74 4e 65 65 64 45 46 49
+Current partition structure:
+ 1 P Linux filesys. data         2048  364893153  364891106 [root]
+ 2 P MS Data                492832768  494929919    2097152 [NO NAME]
+ 3 P Unknown                497027072  500117503    3090432
+ 5 P Linux filesys. data    369952768  464396287   94443520
+
+search_part()
+Disk /dev/sdb - 256 GB / 238 GiB - CHS 31130 255 63
+
+recover_EXT2: s_block_group_nr=0/1391, s_mnt_count=10/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 45611388
+recover_EXT2: part_size 364891104
+Filesystem created: Sun Sep 21 00:45:26 2025
+Last mount time:    Thu Sep 25 23:03:53 2025
+     Linux filesys. data         2048  364893151  364891104
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 186 GB / 173 GiB
+
+recover_EXT2: s_block_group_nr=0/127, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 4186880
+recover_EXT2: part_size 33495040
+Filesystem created: Sat Aug 23 19:47:05 2025
+Last mount time:    Sat Sep 13 00:04:51 2025
+     Linux filesys. data    364893155  398388194   33495040
+     ext4 blocksize=4096 Large_file Sparse_SB, 17 GB / 15 GiB
+
+block_group_nr 125
+
+recover_EXT2: "e2fsck -b 4096000 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=125/360, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8176
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 11805440
+recover_EXT2: part_size 94443520
+Filesystem created: Sat Sep 13 23:46:27 2025
+     Linux filesys. data    369952766  464396285   94443520 [Builds]
+     ext4 blocksize=4096 Large_file Sparse_SB Backup_SB, 48 GB / 45 GiB
+     BeFS                   466860612 2441966978873923 2441966512013312 [œÆ¥MbíLÑº©'=ﬁ◊Aî3hTçòÈ˘'<› ≈|]
+     BeFS blocksize=2097152, 1250286 TB / 1137129 TiB
+This partition ends after the disk limits. (start=466860612, size=2441966512013312, end=2441966978873923, disk end=500118192)
+FAT32 at 30238/127/34
+FAT1 : 32-3954
+FAT2 : 3955-7877
+start_rootdir : 7878 root cluster : 2
+Data : 7878-509951
+sectors : 509952
+cluster_size : 1
+no_of_cluster : 502074 (2 - 502075)
+fat_length 3923 calculated 3923
+heads/cylinder 16 (FAT) != 255 (HD)
+sect/track 32 (FAT) != 63 (HD)
+
+FAT32 at 30238/127/34
+FAT: cluster=2(0x2), pos=485789382
+     EFI System             485781504  486291455     509952 [EFI System Partition] [ARCHISO_EFI]
+     FAT32, blocksize=512, 261 MB / 249 MiB
+
+block_group_nr 343
+
+recover_EXT2: "e2fsck -b 11239424 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=343/360, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8176
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 11805440
+recover_EXT2: part_size 94443520
+Filesystem created: Sat Sep 13 23:46:27 2025
+     Linux filesys. data    398389246  492832765   94443520 [Builds]
+     ext4 blocksize=4096 Large_file Sparse_SB Backup_SB, 48 GB / 45 GiB
+FAT32 at 30677/107/23
+FAT1 : 32-2079
+FAT2 : 2080-4127
+start_rootdir : 4128 root cluster : 2
+Data : 4128-2097143
+sectors : 2097144
+cluster_size : 8
+no_of_cluster : 261627 (2 - 261628)
+fat_length 2048 calculated 2044
+set_FAT_info: name from BS used
+
+FAT32 at 30677/107/23
+FAT: cluster=2(0x2), pos=492836896
+     EFI System             492832768  494929911    2097144 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1023 MiB
+FAT32 at 30938/128/39
+FAT1 : 32-3047
+FAT2 : 3048-6063
+start_rootdir : 6064 root cluster : 2
+Data : 6064-3090399
+sectors : 3090402
+cluster_size : 8
+no_of_cluster : 385542 (2 - 385543)
+fat_length 3016 calculated 3013
+
+FAT32 at 30938/128/39
+FAT: cluster=2(0x2), pos=497033136
+     MS Data                497027072  500117473    3090402 [boot]
+     FAT32, blocksize=4096, 1582 MB / 1508 MiB
+NTFS at 31130/223/5
+filesystem size           499877888
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                   239616  500117503  499877888
+     NTFS found using backup sector, blocksize=4096, 255 GB / 238 GiB
+NTFS at 31130/223/5
+filesystem size           499877888
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+NTFS: Can't read MFT
+     MS Data                500117503  999995390  499877888
+     NTFS, blocksize=4096, 255 GB / 238 GiB
+This partition ends after the disk limits. (start=500117503, size=499877888, end=999995390, disk end=500118192)
+Disk /dev/sdb - 256 GB / 238 GiB - CHS 31130 255 63
+Check the hard disk size: HD jumper settings, BIOS detection...
+The hard disk (256 GB / 238 GiB) seems too small! (< 1250287 TB / 1137129 TiB)
+The following partitions can't be recovered:
+     BeFS                   466860612 2441966978873923 2441966512013312 [œÆ¥MbíLÑº©'=ﬁ◊Aî3hTçòÈ˘'<› ≈|]
+     BeFS blocksize=2097152, 1250286 TB / 1137129 TiB
+     MS Data                500117503  999995390  499877888
+     NTFS, blocksize=4096, 255 GB / 238 GiB
+SIGHUP detected! PhotoRec has been killed.
+SIGHUP detected! PhotoRec has been killed.
