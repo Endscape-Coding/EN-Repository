@@ -51,6 +51,13 @@
 **Зависимости:** git pacman>6.1   
 **Команда установки:** `sudo pacman -S yay`
 
+### en-pamac
+**Версия:** 1-1 
+**Размер:** ~19.3 MB  
+**Описание:** Менеджер пакетов и обновлений с поддержкой Aur, flatpak и snap пакетов  
+**Зависимости:** gtk3 libnotify json-glib libhandy libadwaita archlinux-appstream-data polkit en-libpamac
+**Команда установки:** `sudo pacman -S en-pamac`
+
 ## 💻 Приложения / Applications
 
 ### ayugram-desktop
