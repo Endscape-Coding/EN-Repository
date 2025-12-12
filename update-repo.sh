@@ -10,7 +10,7 @@ fi
 
 # Переходим в папку repo
 echo "Переходим в папку repo..."
-cd ./repo || { echo "Ошибка: папка repo не существует"; exit 1; }
+cd /run/media/endscape/Games/Докуметы/EN-Repository/EN-Repository/repo || { echo "Ошибка: папка repo не существует"; exit 1; }
 
 # 1. Добавляем пакеты в репозиторий
 echo "Добавляем пакеты в репозиторий..."
