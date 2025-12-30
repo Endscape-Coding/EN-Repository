@@ -1,8 +1,8 @@
 pkgname = avalonix
 
-pkgver = 2.2.0
+pkgver = 2.2-1
 
-pkgdesc = Simple, user-friendly, cross-platform player
+pkgdesc = Simple userfriendly music player
 
 arch = x86_64
 url="https://endscape-coding.github.io/"
