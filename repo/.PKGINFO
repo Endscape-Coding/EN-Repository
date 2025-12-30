@@ -1,0 +1,14 @@
+pkgname = avalonix
+pkgbase = avalonix
+pkgver = 2.2-1
+pkgdesc = Simple, user-friendly, cross-platform player
+url = https://endscape-coding.github.io
+builddate = 1704067200
+packager = Endscape endscape.coding@gmail.com
+size = 12345
+arch = x86_64
+license = GPL
+
+depend = python3
+
+
